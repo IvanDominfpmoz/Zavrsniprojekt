@@ -32,7 +32,7 @@
 </template>
 
 <script>
-import firebase from "../firebase/index";
+import firebase from "../firebase/index"; 
 import PostService from '@/PostService';
 
 export default {
