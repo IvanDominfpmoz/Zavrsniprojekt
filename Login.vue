@@ -83,7 +83,7 @@ export default {
         alert("User does not exist or credentials invalid")
       }
     },
-    // async await je asinkroni poziv, odnosno tj, program se nece dalje izvrsavati dok se ne izvrsi ta linija koda
+    // async await je asinkroni poziv, odnosno tj, program se nece dalje izvrsavati dok se ne izvrsi ta linija koda 
     async getUserData() {
       const user = await firebase.auth().currentUser; //znaci program ceka ovu liniju koda
       if (user !== null || user != undefined) { //pa tek nakon sto se ona izvrsi prelazi na ovu
