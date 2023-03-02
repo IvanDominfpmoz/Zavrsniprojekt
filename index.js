@@ -4,6 +4,7 @@ const cors = require("cors");
 
 const app = express();
 
+
 //Middleware koji zapravo sluzi za definiranje ruta i pokretanje servera
 //ovo su sve extenzije koje se koriste ne vide se u radu ali su bitne, kao npr CORS koji licencira Cors policy
 app.use(bodyParser.json());
