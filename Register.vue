@@ -93,7 +93,7 @@ export default {
         await firebase
           .auth()
           .createUserWithEmailAndPassword(newUser.email, newUser.password);
-        await firebase.auth().currentUser.updateProfile({displayName: newUser.firstname}) // ovo je da postavi username {displayName}
+        await firebase.auth().currentUser.updateProfile({displayName: newUser.firstname}) // ovo je da se postavi username {displayName}
         this.$router.replace({ path: '/shop' })
       }else{
         alert("User already exists") //ovo je greska (javlja se kao alert)
