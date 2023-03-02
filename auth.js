@@ -3,7 +3,7 @@ const mongodb = require('mongodb');
 
 const router = express.Router();
 
-//RUTE, ovde havata kolekciju
+//RUTE, ovdje se hvata kolekcija
 router.post('/', async(req, res) =>{
   const posts = await loadUserCollection(); // kolekcija
   await posts.insertOne({
@@ -28,7 +28,7 @@ async function loadUserCollection() { //kolekcija
     useNewUrlParser: true
   });
 
-  return client.db('Cluster0').collection('auth') // vracas koju kolekciju hoces da koristis ovde
+  return client.db('Cluster0').collection('auth') // vraca se kolekcija koju hocemo da koristmo ovdje
 }
 
 module.exports = router
